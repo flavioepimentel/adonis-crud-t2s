@@ -1,0 +1,30 @@
+
+  Error 
+
+ Cannot find module 'config/auth'
+Require stack:
+- C:\VS CODE - Projetos\app-crud-t2s\start\routes.ts
+- C:\VS CODE - Projetos\app-crud-t2s\node_modules\@adonisjs\application\build\src\Application.js
+- C:\VS CODE - Projetos\app-crud-t2s\node_modules\@adonisjs\application\build\index.js
+- C:\VS CODE - Projetos\app-crud-t2s\node_modules\@adonisjs\core\build\standalone.js
+- C:\VS CODE - Projetos\app-crud-t2s\ace
+
+ at Object.<anonymous> C:/VS CODE - Projetos/app-crud-t2s/start/routes.ts:23
+  18|  |
+  19|  */
+  20|  
+  21|  import Route from '@ioc:Adonis/Core/Route'
+  22|  import Database from '@ioc:Adonis/Lucid/Database'
+> 23|  import 'config/auth'
+  24|  
+  25|  Route.get('/', async () => {
+  26|    return Database.from('users').select('*')
+  27|  })
+  28|  
+
+   1  Module._compile
+     C:/VS CODE - Projetos/app-crud-t2s/node_modules/pirates/lib/index.js:136
+
+   2  Object.newLoader [as .ts]
+     C:/VS CODE - Projetos/app-crud-t2s/node_modules/pirates/lib/index.js:141
+
